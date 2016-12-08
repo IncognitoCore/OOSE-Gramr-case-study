@@ -1,0 +1,41 @@
+* nieuwe set toevoegen zonder foto *
+{"owner":"Mastermindzh","name":"Setnaam","id":512,"photos":[]}
+
+http://localhost:8080/rest/sets/addSetJSON
+* Nieuwe set met foto *
+{
+"owner": "Mastermindzh",
+"name": "testJSON",
+"id": 1,
+"photos": [
+{
+"id": 1,
+"title": "stan",
+"creator": "Mastermindzh",
+"url": "http://c4.staticflickr.com/3/2899/14067202283_22936ab26c_c.jpg",
+"filter": null,
+"description": "stan",
+"isPrivate": {
+"privacy": true
+}
+}
+]
+}
+
+* foto aan set koppelen *
+http://localhost:8080/rest/sets/addPhotoToSetJSON
+{"setID":"18","photoID":"5"}
+
+
+* save / add foto *
+{"creator":"Mastermindzh","isPrivate": {
+"privacy": true
+},"description":"Hidden pictures are the best pictures","id":999,"title":"picture","url":"http://c4.staticflickr.com/8/7354/14081489995_9bba3b9bdf_n.jpg"}
+
+* applyFilter *
+** http://localhost:8080/rest/photos/applyFilter **
+{"photoID":"4","filterName":"vintage"}
+
+* changeName *
+http://localhost:8080/rest/sets/changeName
+{"setID":"1","setName":"Jan faalt"}
