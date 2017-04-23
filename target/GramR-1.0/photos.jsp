@@ -9,7 +9,7 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Titel</th>
+                <th>Title</th>
                 <th>Owner</th>
                 <th>Image</th>
                 <th>Filter properties</th>
